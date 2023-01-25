@@ -1,0 +1,42 @@
+.header {
+    background-color: black;
+}
+
+blockquote, div.admonition {
+    overflow: hidden;
+}
+
+.header_item.selected {
+    color: darksalmon;
+    border-bottom: solid dodgerblue 3px;
+}
+
+.header_item_source {
+    color: darksalmon;
+    margin: 0 7px 0 7px;
+}
+
+.headerTitle {
+    color: antiquewhite;
+}
+
+.header_item_source.inactive {
+    color: darkgray;
+}
+
+div.sidebar a:link, div.sidebar a:visited, div.sidebar a:hover, div.sidebar a:active {
+    color: firebrick;
+}
+
+.sidebar {
+    background-color: powderblue;
+}
+
+div.sidebar_item:hover { 
+    /* background-color: lightskyblue;  */
+    background-color: skyblue; 
+}
+
+div.sidebar_item.selected {
+    border-right-color: firebrick;
+}

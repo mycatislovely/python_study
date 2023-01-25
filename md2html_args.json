@@ -1,0 +1,54 @@
+{
+    "options": {
+        "verbose": true
+    },
+    "default": {
+        "input-root": "doc_src",
+        "output-root": "doc/content", 
+        "template": "doc_src/templates/multipage.html",
+        "no-css": true,
+        "verbose": true
+    },
+    "documents": [      
+        { "input-glob": "*.txt", "page-flows": ["sections", "nav"], 
+            "title-from-variable": "title", "code-from-variable": "code", 
+            "sort-by-variable": "SORT_ORDER" },
+        { "input-glob": "problems/*.txt", "page-flows": ["problems", "nav"], 
+            "title-from-variable": "title", "code-from-variable": "code", 
+            "sort-by-file-path": true }
+    ],
+    "plugins": {
+        "relative-paths": {
+            "markers": ["path"],
+            "paths": {
+                "resource_path": "doc/",
+                "pict": "doc/pict/",
+                "problems": "code/problems/",
+                "code": "code/"
+            }
+        },
+        "page-flows": {
+            "header": [
+               { "link": "doc/content/index_page.html", "title": "Index" },
+               { "link": "doc/content/todo_page.html", "title": "TODO" },
+               { "link": "doc/content/problems_page.html", "title": "Задачи" }
+            ],
+            "useful_links": [
+               { "link": "https://www.python.org/", "title": "Python", "external": true },
+               { "link": "https://git-scm.com/", "title": "Git", "external": true }    
+            ]               
+        },
+        "variables": {"logo": "<b><span style=\"color:#59f;margin-right:7px;\">Py</span></b>" },
+        "page-variables": {},
+        "index": {"i": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
+                    "index-cache-relative": true, "letters": true, "letters-block": true },
+                  "todo": {"output": "todo_page.html", "title": "TODO", "index-cache": "todo_cache.json", 
+                    "index-cache-relative": true, "letters": false, "letters-block": false },
+                  "p": {"output": "problems_page.html", "title": "Индекс по задачам",
+                    "index-cache": "problems_cache.json", 
+                    "index-cache-relative": true, "letters": true, "letters-block": true }
+        },
+        "ignore": { },
+        "page-links": { "markers": ["page"] }
+    }
+}

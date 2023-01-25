@@ -1,0 +1,162 @@
+<!--VARIABLES {"title": "Technical English", "SORT_ORDER": "23", "code": "technical_english"}-->
+
+<script>
+var dicts = [
+{word: "word", translation: "слово"},
+{word: "variable", translation: "переменная", transcription: "'ve(ə)rıəb(ə)l"},
+{word: "page", translation: "страница"},
+{word: "No such file", translation: "нет такого файла."},
+{word: "Variable 'x' is not defined", translation: "переменная 'x' не определена."},
+{word: "File not found", translation: "файл не найден."},
+{word: "find", translation: "найти"},
+{word: "search", translation: "искать", transcription: "sɜ:tʃ"},
+{word: "return", translation: "вернуть. (Например, значение из функции.)"},
+{word: "loop", translation: "цикл"},
+{word: "dictionary", translation: "словарь", transcription: "'dıkʃ(ə)n(ə)rı"},
+{word: "process", translation: "обрабатывать"},
+{word: "entry", translation: "вхождение (например, пара: ключ, значение, как элемент словаря)"},
+{word: "application", translation: "приложение, программа"},
+{word: "update", translation: "обновлять, изменять"},
+{word: "modified", translation: "изменять"},
+{word: "insert", translation: "вставить"},
+{word: "edit", translation: "редактировать"},
+{word: "add", translation: "добавлять"},
+{word: "array", translation: "массив"},
+{word: "value", translation: "значение"},
+{word: "assert", translation: "утверждать"},
+{word: "conditions", translation: "условие"},
+{word: "assign", translation: "назначать, присваивать (значение переменной)", 
+    transcription: "ə'saın"},
+{word: "expression", translation: "выражение (которое вычисляется)"},
+{word: "performance", translation: "производительность"},
+{word: "setup ", translation: "настраивать, устанавливать"},
+{word: "cycle", translation: "цикл"},
+{word: "target", translation: "цель"},
+{word: "destination", translation: "цель, назначение"},
+{word: "source", translation: "источник"},
+{word: "average", translation: "средне-арифметическое"},
+{word: "first", translation: "первый"},
+{word: "compress ", translation: "сжимать"},
+{word: "debug", translation: "отлаживать, разбор программы по шагам"},
+{word: "enable ", translation: "активировать"},
+{word: "disable", translation: "дезактивировать"},
+{word: "query", translation: "запрос", transcription: "'kwı(ə)rı"},
+{word: "encrypt", translation: "зашифровывать"},
+{word: "folder", translation: "папка"},
+{word: "password", translation: "пароль"},
+{word: "replace", translation: "заменить"},
+{word: "validation", translation: "проверка"},
+{word: "symbol", translation: "символ"},
+{word: "iteration", translation: "итерация"},
+{word: "tuple", translation: "кортеж"},
+{word: "range", translation: "последовательность"},
+{word: "counting", translation: "подсчет"},
+{word: "sequences", translation: "последовательности  "},
+{word: "mutation", translation: "мутация"},
+{word: "functions", translation: "функции"},
+{word: "indent", translation: "отступ"},
+{word: "indentation", translation: "расстановка, отступ"},
+{word: "expect", translation: "ожидать"},
+{word: "character", translation: "символ"},
+{word: "exception", translation: "исключение (ошибки)"},
+
+{word: "odd", translation: "нечетное", transcription: "[ɒd]"},
+{word: "even", translation: "четное", transcription: "['i:v(ə)n]"},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""},
+{word: "", translation: "", transcription: ""}
+];
+</script>
+
+<p>
+<input type="text" id="filter" onkeypress="handleKeyPress(event);" />
+<input type="button" value="Apply" onclick="applyFilter();return false;" />
+<input type="button" value="Clear" onclick="clearFilter();return false;" />
+</p>
+
+<div id="dictTable">
+</div>
+
+
+<script>
+var DICT_TABLE_ID = "dictTable";
+
+fillTable();
+
+function handleKeyPress(event) {
+    if(event.key === 'Enter') {
+        applyFilter();
+    }
+}
+
+function applyFilter() {
+    clearTable();
+    fillTable();
+}
+
+function fillTable() {
+    
+    var filter = document.getElementById("filter").value.trim().toLowerCase();
+    
+    var dictTable = document.getElementById(DICT_TABLE_ID);
+    dictTable.hidden = true;
+    var newList = [];
+    for (var i = 0; i < dicts.length; i++) {
+        var dict = dicts[i];
+        if (filter && !dict.word.toLowerCase().includes(filter) && 
+            !dict.translation.toLowerCase().includes(filter) || !dict.word) {
+            continue;
+        }
+        newList.push(dict);
+    }
+    
+    newList.sort(compare);
+    
+    for (var i = 0; i < newList.length; i++) {
+    
+        var dict = newList[i];
+        
+        var transcription = ""
+        if (dict.hasOwnProperty("transcription") && dict.transcription) {
+            transcription = " [" + dict.transcription + "]";
+        }
+    
+        var iDiv = document.createElement('div');
+        iDiv.innerHTML = "<p><b>" + dict.word + "</b>" + transcription + 
+            " &mdash; " + dict.translation + "</p>";
+        dictTable.appendChild(iDiv);
+    }
+    
+    dictTable.hidden = false;
+}
+
+function clearTable() {
+    var dictTable = document.getElementById(DICT_TABLE_ID);
+    dictTable.innerHTML = "";
+
+}
+
+function clearFilter() {
+    document.getElementById("filter").value = "";
+    applyFilter();
+}
+
+function compare(a, b) {
+    var first = a.word.toLowerCase();
+    var second = b.word.toLowerCase();
+
+  if ( first < second ) {
+    return -1;
+  }
+  if ( first > second ) {
+    return 1;
+  }
+  return 0;
+}
+</script>
+
