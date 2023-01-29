@@ -950,7 +950,6 @@ if __name__ == "main":
 реализовать данное правило если мы не будем менять исходную матрицу, а создадим новую и раскрасим
 все клетки заново.
  
-
 ````
 5 6
 ...XX.
@@ -968,6 +967,19 @@ XXXX.X
 XXXXX.
 ````
 
+<p><video width="555" height="328" controls class="floatRight">
+  <source src="<!--path pict-->life_anime.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></p>
+В  файле [`life_anime.py`](<!--path code-->problems/python_drill/life/life_anime.py) находится 
+программа, которая выводит анимацию данного алгоритма.
 
+<p style="clear: both;"></p>
+
+<p><img src="<!--path pict-->life_anime.png" class="floatRight" /></p>
+
+Если видео не работает, то можно посмотреть на картинку.
+
+<p style="clear: both;"></p>
 
 
