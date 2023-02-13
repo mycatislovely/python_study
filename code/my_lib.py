@@ -64,5 +64,3 @@ def arrays_equal_in_any_order(a, b):
         
         
     
-
- 

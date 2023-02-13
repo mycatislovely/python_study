@@ -39,7 +39,7 @@ generate_doc.bat -f
 
 Добавление картинки с обтеканием текста: 
 
-`<p><img src="<!--ignore path pict-->sample_picture.jpg" class="floatRight" /></p>`
+`<p><img src="<!--ignore path pict-->sample_picture.png" class="floatRight" /></p>`
 
 Для завершения обтекания необходимо добавить следующий код:
 
