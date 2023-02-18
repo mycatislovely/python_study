@@ -1032,5 +1032,81 @@ print('ДА' if sum(1 for i in input().split('.') if 0 <= int(i) <= 255) == 4 el
 с фильтрацией. Функция `sum()` принимает этот генератор как 
 источник значений. Окончательное решение принимается с помощью условного (тернарного) оператора. 
 
+----------------------------------------------------------------------------------------------------
+<!--p ["слияние списков", "merge"]--><a name="merge"></a>
+# Слияние отсортированных списков
 
+Написать функцию слияния отсортированных списков в двух вариантах:
+
+- для двух списков;
+- для нескольких списков.
+
+Первый вариант:
+
+````code
+def merge(list1, list2):
+    tmp = []
+    i1 = 0
+    i2 = 0
+    while i1 < len(list1) and i2 < len(list2):
+        if list2[i2] < list1[i1]:
+            tmp.append(list2[i2])
+            i2 += 1
+        else:
+            tmp.append(list1[i1])
+            i1 += 1
+    for i in range(i1, len(list1)):
+        tmp.append(list1[i])
+    for i in range(i2, len(list2)):
+        tmp.append(list2[i])
+    return tmp
+````
+
+Второй вариант (простая версия, использующая функцию `merge`):
+   
+````code    
+def quick_merge(lists):
+    result = []
+    for l in lists:
+        result = merge(result, l)
+    return result    
+    
+lists = [[1, 2, 3, 400], [50, 60, 700], [10, 11, 17]]
+
+print(quick_merge(lists))
+````            
+
+````shell
+>python program.py
+[1, 2, 3, 10, 11, 17, 50, 60, 400, 700]
+````
+
+Второй вариант, полное решение в одной функции:
+
+````code
+def quick_merge(lists):
+    result = []
+    pointers = [0] * len(lists)  # указатели текущих значений списков
+    i_min = 0  # индекс списка с выбранным минимальным значением
+    while i_min >= 0:  # i_min также используется для завершения работы
+        v_min = None
+        i_min = -1
+        for i in range(len(lists)):
+            if pointers[i] < len(lists[i]):  # рассматриваем только не закончившиеся списки
+                v = lists[i][pointers[i]]  # текущее значение текущего списка
+                if v_min is None or v < v_min:
+                    v_min = v
+                    i_min = i
+        if i_min >= 0:            
+            result.append(v_min)
+            pointers[i_min] += 1
+        
+    return result
+
+# считываем данные
+lists = [[int(i) for i in input().split()] for _ in range(int(input()))]
+
+# вызываем функцию
+print(*quick_merge(lists))
+````
 

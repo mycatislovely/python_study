@@ -409,6 +409,18 @@ if not printed:
 ````shell
 1 4 5
 ```` 
+Функция для поиска индекса в строке:
+
+````code# объявление функции
+def find_all(target, symbol):
+    return [c for c in range(len(target)) if target[c] == symbol]
+# считываем данные
+s = input()
+char = input()
+
+# вызываем функцию
+print(find_all(s, char))
+````
 
 ----------------------------------------------------------------------------------------------------
 <!--p ["сумма крестиком", "матрица", "list comprehension"]-->
