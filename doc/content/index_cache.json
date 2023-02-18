@@ -731,6 +731,21 @@
       "entry": "\u043f\u043e\u0438\u0441\u043a \u0438 \u0437\u0430\u043c\u0435\u043d\u0430",
       "link": "python_program_elements.html#index_entry_i_47",
       "title": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u043d\u0430 \u044f\u0437\u044b\u043a\u0435 Python"
+    },
+    {
+      "entry": "\u0440\u0435\u0433\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u0438\u044f",
+      "link": "python_program_elements.html#index_entry_i_48",
+      "title": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u043d\u0430 \u044f\u0437\u044b\u043a\u0435 Python"
+    },
+    {
+      "entry": "regular expressions",
+      "link": "python_program_elements.html#index_entry_i_48",
+      "title": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u043d\u0430 \u044f\u0437\u044b\u043a\u0435 Python"
+    },
+    {
+      "entry": "regex",
+      "link": "python_program_elements.html#index_entry_i_48",
+      "title": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u044b \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u043d\u0430 \u044f\u0437\u044b\u043a\u0435 Python"
     }
   ],
   "doc/content/programming_techniques.html": [
@@ -840,6 +855,16 @@
     {
       "entry": "search",
       "link": "problems/4_python_drill.html#index_entry_i_5",
+      "title": "4 Python drill"
+    },
+    {
+      "entry": "stack",
+      "link": "problems/4_python_drill.html#index_entry_i_6",
+      "title": "4 Python drill"
+    },
+    {
+      "entry": "\u0441\u0442\u0435\u043a",
+      "link": "problems/4_python_drill.html#index_entry_i_6",
       "title": "4 Python drill"
     }
   ],
