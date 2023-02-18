@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg19187"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="picthers.svg"
    inkscape:export-filename="processor.png"
    inkscape:export-xdpi="96"
@@ -27,11 +27,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="4.0000001"
-     inkscape:cx="123.75"
-     inkscape:cy="42.624999"
+     inkscape:zoom="8.5674603"
+     inkscape:cx="150.80315"
+     inkscape:cy="61.161649"
      inkscape:window-width="1366"
-     inkscape:window-height="664"
+     inkscape:window-height="683"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -595,9 +595,9 @@
        transform="scale(0.85699849,1.1668632)"><tspan
          x="68.989433"
          y="158.88182"
-         id="tspan2666"><tspan
+         id="tspan2134"><tspan
            dx="0 5.0628695 25.804302 5.06287 25.804302"
-           id="tspan2663">[ ]  </tspan></tspan></text>
+           id="tspan2132">[ ]  </tspan></tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot);marker-end:url(#marker21395)"
        d="m 67.518292,189.4019 c 0.02621,-4.9658 4.083125,-9.60638 12.712411,-9.60638"
@@ -992,7 +992,7 @@
          x="11.4911"
          y="18.591665">Py</tspan></text>
     <circle
-       style="opacity:0.9;fill:#ffff00;stroke:#784421;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none"
+       style="opacity:0.9;fill:#ffff00;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-dasharray:none"
        id="circle800"
        cx="41.150402"
        cy="16.539042"
@@ -1002,14 +1002,15 @@
        inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
-       style="font-size:7.30139px;opacity:0.9;fill:#000080;stroke:none;stroke-width:0.4;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="36.540691"
-       y="18.458866"
+       style="font-size:8.96552px;letter-spacing:-0.433917px;opacity:0.9;fill:#000000;stroke:none;stroke-width:0.491166;stroke-linecap:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="36.74028"
+       y="18.814632"
        id="text804"><tspan
-         sodipodi:role="line"
          id="tspan802"
-         style="fill:#000080;stroke:none;stroke-width:0.4;stroke-dasharray:none;paint-order:stroke fill markers"
-         x="36.540691"
-         y="18.458866">Py</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;stroke:none;stroke-width:0.491166;stroke-dasharray:none;paint-order:stroke fill markers"
+         x="36.74028"
+         y="18.814632"
+         sodipodi:role="line"
+         dx="0">Py</tspan></text>
   </g>
 </svg>
