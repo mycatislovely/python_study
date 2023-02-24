@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from math import *
 
 def draw_plot(function, left_boundary, right_boundary):
 
@@ -26,4 +27,18 @@ def draw_plot(function, left_boundary, right_boundary):
 # draw_plot(lambda x: x ** 2 + 3 * x - 10, -10, 10)
 # draw_plot(lambda x: -(x ** 2) + 4 * x - 4, -10, 10)
 # draw_plot(lambda x: -(x ** 3)- 4, -10, 10)
-draw_plot(lambda x: -(0.5 * x )- 4, -10, 10)
+# draw_plot(lambda x: -(0.5 * x )- 4, -10, 10)
+# draw_plot(lambda x: 2 ** x, -4, 3)
+draw_plot(np.vectorize(lambda x: log(x, 2)), 0.2, 32)
+
+
+
+
+
+
+
+
+
+
+
+
