@@ -1,4 +1,4 @@
-<!--VARIABLES {"title": "1 Основы"}-->
+<!--VARIABLES {"title": "1 Основы",  "code": "intro_tasks" }-->
 
 [TOC]
 
@@ -907,3 +907,33 @@ for i in range(a, b + 1):
         i_max = i
 print(i_max, s_max)
 ````
+
+----------------------------------------------------------------------------------------------------
+<!--p ["системы счисления"]--><a name="identify_notation"></a>
+# Определить систему счисления
+
+Даны три числа в N-ричной системе счисления, такие что первое число есть сумма второго и третьего.
+Определить систему счисления N.
+
+!!! note    
+    О системах счисления можно узнать [здесь](<!--page architecture-->#positional_number_system).
+
+````code
+from sys import argv 
+
+a, b, c = argv[1:4]
+
+for i in range(2, 37):
+    try: 
+        if int(b, i) + int(c, i) == int(a, i):   
+            print(i)
+    except ValueError:
+        pass
+````
+
+````shell
+>python ..\program.py 51 17 33
+9
+````
+
+

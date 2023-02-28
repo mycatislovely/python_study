@@ -7,7 +7,7 @@ result = [alf[(d[c] + n) % l] for c in s]
 print('Result:',' ','"',''.join(result),'"', sep='')  # "lcdpcfdhvdu"
 
    
-    
+  
 
 
 # s = input().lower().split()

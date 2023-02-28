@@ -31,7 +31,8 @@
             "header": [
                { "link": "doc/content/index_page.html", "title": "Index" },
                { "link": "doc/content/todo_page.html", "title": "TODO" },
-               { "link": "doc/content/problems_page.html", "title": "Задачи" }
+               { "link": "doc/content/problems_page.html", "title": "Задачи" },
+               { "link": "https://github.com/alovemycat/python_study", "title": "GitHub", "external": true }
             ],
             "useful_links": [
                { "link": "https://www.python.org/", "title": "Python", "external": true },

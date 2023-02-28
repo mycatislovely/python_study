@@ -239,7 +239,103 @@ ASeW5s4Hstx9TJ
 8gcaH834KGneEn
 ````
 
+----------------------------------------------------------------------------------------------------
+<!--p ["шифр Цезаря"]--><a name="caesar1"></a>
+# Шифр Цезаря
 
+Предыдущий вариант задачи описан [здесь](<!--page 4_python_drill-->#caesar). В этом варианте 
+сделаем следующие изменения:
+
+- шифруются только символы из алфавита, остальные выводятся без изменения;
+- учитывается регистр символов;
+- программа поддерживает несколько алфавитов;
+- входной текст поступает из консольного ввода, результат выводится так же в консоль;
+- программа позволяет перебор смещений (для подбора неизвестного пароля).
+
+````code
+import sys
+
+
+alfs = {'en': 'abcdefghijklmnopqrstuvwxyz', 
+        'ru': 'абвгдежзийклмнопрстуфхцчшщъыьэюя',
+        }
+indexes = {k:{v[i] : i for i in range(len(v))} for k, v in alfs.items()}
+
+def caesar(sring, shift, lang):
+    alf = alfs[lang]
+    l = len(alf)
+    index = indexes[lang]
+    result = []
+    for c in sring:
+        c_lower = c.lower()
+        c_isupper = c.isupper()
+        if c_lower not in index:
+            result.append(c)
+        else:
+            c_new = alf[(index[c_lower] + shift) % l]
+            result.append(c_new.upper() if c_isupper else c_new)
+    return ''.join(result)
+
+
+shift = sys.argv[1]
+lang = sys.argv[2].strip().lower()
+        
+while True:
+    try:
+        sring = input()
+    except EOFError:
+        break
+    if shift == '?':
+        for i in range(1, len(alfs[lang])):
+            print(f"{i}:".rjust(4, ' '), caesar(sring, i, lang))
+    else:
+        print(caesar(sring, int(shift), lang))                 
+````
+
+````code
+sring = input()
+result = []
+word = []
+lang = 'en'
+index = indexes[lang]
+for c in sring:
+    if c.lower() in index:
+        word.append(c)
+    else:
+        if word:
+            result.append(caesar(word, len(word), lang))
+        result.append(c)
+        word = []
+if word:
+    result.append(caesar(word, len(word), lang)) 
+    
+print(''.join(result))
+````
+
+
+<!--i ["аргументы командной строки", "argv"]-->
+Используем массив `sys.argv` для получения переданных программе аргументов командной строки.
+
+````shell
+>python caesar.py  11 ru
+Я люблю своего кота Федора!
+К цймцй ьнщрощ хщэл Ярпщыл!
+^Z
+
+>python caesar.py  -11 ru
+К цймцй ьнщрощ хщэл Ярпщыл!
+Я люблю своего кота Федора!
+^Z
+
+>python caesar.py ?  en
+Hawnj pk swhg xabkna ukq nqj.
+  1: Ibxok ql txih ybclob vlr ork.
+  2: Jcypl rm uyji zcdmpc wms psl.
+  3: Kdzqm sn vzkj adenqd xnt qtm.
+  4: Learn to walk before you run.
+  5: Mfbso up xbml cfgpsf zpv svo.
+.  .  .  
+````
 
 
 

@@ -62,7 +62,7 @@ var dicts = [
 
 {word: "odd", translation: "нечетное", transcription: "[ɒd]"},
 {word: "even", translation: "четное", transcription: "['i:v(ə)n]"},
-{word: "", translation: "", transcription: ""},
+{word: "EOFError", translation: "End of fail, конец файла.", transcription: ""},
 {word: "", translation: "", transcription: ""},
 {word: "", translation: "", transcription: ""},
 {word: "", translation: "", transcription: ""},
