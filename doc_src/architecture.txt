@@ -1,4 +1,4 @@
-<!--VARIABLES {"title": "Технические основы программирования", "code": "architecture", "SORT_ORDER": "05"}-->
+<!--VARIABLES {"title": "Основы программирования", "code": "architecture", "SORT_ORDER": "05"}-->
 
 [TOC]
 

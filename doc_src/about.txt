@@ -8,9 +8,24 @@
 В данном документе ведется конспект курса по  изучению языка программирования Python, основ 
 программирования и проектирования программ, сопутствующих технологий.
 
-Источник: курс на платформе **Stepik** [Программирование на языке Python](
-https://stepik.org/lesson/22966/step/1?adaptive=true&thread=solutions&unit=5367).
+Источники: курсы на платформе **Stepik**:
 
+- ["Поколение Python": курс для начинающих](https://stepik.org/course/58852/syllabus)
+- [Программирование на Python](https://stepik.org/course/67/syllabus)
+- Также есть курс [Программирование на языке Python](
+    https://stepik.org/lesson/22966/step/1?adaptive=true&thread=solutions&unit=5367),
+    на котором можно порешать задачки
+
+
+Полезные ссылки:
+
+- [Документация Python](https://docs.python.org/3/)чрезвычайно подробна и наполнена большим 
+количеством примеров
+- На GitHub есть [коллекция хороших библиотек](https://github.com/vinta/awesome-python) для решения 
+различных задач
+- Канал [Тимофея Хирьянова] (https://www.youtube.com/channel/UCQfwKTJdCmiA6cXAY0PNRJw) на youtube
+- Самоучитель [Pythonworld](https://pythonworld.ru/samouchitel-python)
+- Руководство по языку программирования [Python](https://metanit.com/python/tutorial/)
 ----------------------------------------------------------------------------------------------------
 # Конспект
 
