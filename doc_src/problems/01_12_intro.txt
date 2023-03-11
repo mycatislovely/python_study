@@ -164,8 +164,6 @@ if room == 'круг':
 5.332682251925386
 ````
 
-
-<!--i ["кодировка", "encoding"] -->
 !!! note
     Более подробно о переменной окружения `PYTHONUTF8` см. 
     [здесь](<!--page python_working_environment-->#text_encoding_in_windows_terminal). 

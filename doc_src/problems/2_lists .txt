@@ -411,7 +411,8 @@ if not printed:
 ```` 
 Функция для поиска индекса в строке:
 
-````code# объявление функции
+````code
+# объявление функции
 def find_all(target, symbol):
     return [c for c in range(len(target)) if target[c] == symbol]
 # считываем данные
