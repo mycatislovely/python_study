@@ -1004,6 +1004,16 @@
       "entry": "CamelCase",
       "link": "problems/4_python_drill.html#index_entry_p_23",
       "title": "4 Python drill"
+    },
+    {
+      "entry": "\u043a\u0435\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+      "link": "problems/4_python_drill.html#index_entry_p_24",
+      "title": "4 Python drill"
+    },
+    {
+      "entry": "caching",
+      "link": "problems/4_python_drill.html#index_entry_p_24",
+      "title": "4 Python drill"
     }
   ],
   "doc/content/problems/5_chess.html": [
@@ -1103,6 +1113,16 @@
     {
       "entry": "JSON",
       "link": "problems/mini_projects.html#index_entry_p_6",
+      "title": "6 \u041c\u0438\u043d\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b"
+    },
+    {
+      "entry": "Textart",
+      "link": "problems/mini_projects.html#index_entry_p_7",
+      "title": "6 \u041c\u0438\u043d\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b"
+    },
+    {
+      "entry": "\u043f\u0441\u0435\u0432\u0434\u043e\u0433\u0440\u0430\u0444\u0438\u043a\u0430",
+      "link": "problems/mini_projects.html#index_entry_p_7",
       "title": "6 \u041c\u0438\u043d\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u044b"
     }
   ]

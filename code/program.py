@@ -1,19 +1,11 @@
-# from sys import argv 
-
-# a, b, c = argv[1:4]
-
-# for i in range(2, 37):
-    # try: 
-        # if int(b, i) + int(c, i) == int(a, i):   
-            # print(i)
-    # except ValueError:
-        # pass
+def digit_sum(num):
+    return sum(int(i) for i in str(num))
 
 
-l = [1, 4, 2, 6, 8, 3, 5, 9]
-for e in l:
-    if e == 7:
-        print(True)
-        break
-else:
-    print(False)
+s = 0
+for i in range(1000, 10000):
+    if digit_sum(i) == 20:
+        s += i
+print(s)   
+
+
