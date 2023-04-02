@@ -59,3 +59,8 @@ hr {
     margin-left: 0px;
     text-align: left;
 }
+
+div.noBullets + ul {
+    list-style-type: none;
+}
+

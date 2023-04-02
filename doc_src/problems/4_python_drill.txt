@@ -668,11 +668,11 @@ print(w, n)
 ````code
 def colatc(n):
     limit = 10000  # Гипотеза Коллатца - это гипотеза, поэтому мало ли что........
-    cunt = 0
+    count = 0
     while True:
         yield n
-        cunt += 1
-        if cunt > limit:
+        count += 1
+        if count > limit:
             raise Exception(f"Результат не достигнут за {limit} шагов")
         if n == 1:
             return
@@ -695,10 +695,10 @@ for n in colatc(int(input())):
 
 ````code
 def colatc_len(n):
-    cunt = 0
+    count = 0
     for _ in colatc(n):
-        cunt += 1
-    return cunt
+        count += 1
+    return count
         
 print(colatc_len(1001))
 ````
@@ -796,9 +796,9 @@ alf = " abcdefghijklmnopqrstuvwxyz"
 n = int(input())
 s = input().strip()
 l = len(alf)
-d = {alf[i] : i for i in range(l)}
+d = {alf[i]: i for i in range(l)}
 result = [alf[(d[c] + n) % l] for c in s]
-print('Result:',' ','"',''.join(result),'"', sep='')# "lcdpcfdhvdu"
+print('Result:', ' ', '"', ''.join(result), '"', sep='')
 ````
 Этот же код мы можем применить и для расшифровки, изменив шаг сдвига на противоположный.
 
@@ -1310,4 +1310,23 @@ for _ in range(int(input())):
     print(d[x])
 ````
 
+----------------------------------------------------------------------------------------------------
+<!--p ["удаление дубликатов"]-->
+# Удаление дубликатов
 
+На вход программе поступает строка, состоящая из нескольких слов, знаком разделителем между словами 
+будем считать символ пробела. Ваша задача исключить из строки дублирующие слова: первое появление 
+слова остается в строке, второе и все последующие появления исключаются. При сравнении на дубли 
+строк регистр букв не учитывать, это значит слова python и PyThOn считаются одинаковыми.
+
+В качестве ответа необходимо вывести итоговую строку без дублей.
+
+````code
+words = input().split()
+found_words = set()
+for word in words:
+    word_lower = word.lower()
+    if word_lower not in found_words:
+        print(word, end=" ")
+        found_words.add(word_lower)
+````
