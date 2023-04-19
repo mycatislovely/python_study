@@ -31,13 +31,13 @@ class="header_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td valign="top">
-            {{#sections}}<div class="sidebar_item{{#current}} selected{{/current}}"><a href="{{link}}">{{title}}</a></div>
+            {{#sections}}<a class="sidebar_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</a>
             {{/sections}}
             <h3>Задачи</h3>
-            {{#problems}}<div class="sidebar_item{{#current}} selected{{/current}}"><a href="{{link}}">{{title}}</a></div>
+            {{#problems}}<a class="sidebar_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</a>
             {{/problems}}
             <h3>Useful links</h3>
-            {{#useful_links}}<div class="sidebar_item{{#current}} selected{{/current}}"><a href="{{link}}">{{title}}</a></div>
+            {{#useful_links}}<a class="sidebar_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</a>
             {{/useful_links}}
         </td></tr>
         <tr><td class="bottom" valign="bottom">

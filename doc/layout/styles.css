@@ -8,7 +8,7 @@ body {
     margin-right: 50px;
 }
 
-p, h1, h2, h3, h4, h5, h6, div.index-content {
+p, h1, h2, h3, h4, h5, h6 {
     max-width: 900px;
 }
 
@@ -117,6 +117,10 @@ blockquote *, div.admonition * {
     max-width: 868px;
 }
 
+blockquote, div.admonition {
+    overflow: hidden;
+}
+
 blockquote pre>code {
     width: 847px;
 }
@@ -179,6 +183,7 @@ div.admonition>p.admonition-title {
     background-color: #eeeeee;
     padding: 5px 20px 5px 10px;
     font-weight: bold;
+    max-width: unset;
 }
 
 div.admonition p {
@@ -250,22 +255,6 @@ li>blockquote {
 
 li>pre>code {
     width: 838px;
-}
-
-div.index-content {
-    column-count: 4;
-}
-
-p.index-letter {
-    column-span: all;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-p.index-entry {
-    margin-top: 0px;
-    margin-bottom: 8px;
 }
 
 img.floatRight {

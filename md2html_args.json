@@ -42,12 +42,14 @@
         "variables": {"logo": "<b><span style=\"color:#59f;margin-right:7px;\">Py</span></b>" },
         "page-variables": {},
         "index": {"i": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
-                    "index-cache-relative": true, "letters": true, "letters-block": true },
+                    "index-cache-relative": true, "letters": true, "letters-block": true,
+                    "add-link-css": ["doc/layout/index.css"]},
                   "todo": {"output": "todo_page.html", "title": "TODO", "index-cache": "todo_cache.json", 
                     "index-cache-relative": true, "letters": false, "letters-block": false },
                   "p": {"output": "problems_page.html", "title": "Индекс по задачам",
                     "index-cache": "problems_cache.json", 
-                    "index-cache-relative": true, "letters": true, "letters-block": true }
+                    "index-cache-relative": true, "letters": true, "letters-block": true,
+                    "add-link-css": ["doc/layout/index.css"]}
         },
         "ignore": { },
         "page-links": { "markers": ["page"] }
