@@ -60,10 +60,10 @@ var dicts = [
 {word: "character", translation: "символ"},
 {word: "exception", translation: "исключение (ошибки)"},
 
-{word: "odd", translation: "нечетное", transcription: "[ɒd]"},
-{word: "even", translation: "четное", transcription: "['i:v(ə)n]"},
+{word: "odd", translation: "нечетное", transcription: "ɒd"},
+{word: "even", translation: "четное", transcription: "'i:v(ə)n"},
 {word: "EOFError", translation: "End of fail, конец файла.", transcription: ""},
-{word: "", translation: "", transcription: ""},
+{word: "default value", translation: "значение по умолчанию", transcription: "dı'fɔ:lt"},
 {word: "", translation: "", transcription: ""},
 {word: "", translation: "", transcription: ""},
 {word: "", translation: "", transcription: ""},

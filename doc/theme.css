@@ -64,3 +64,8 @@ div.noBullets + ul {
     list-style-type: none;
 }
 
+div.index-content {
+    column-count: 3;
+}
+
+
