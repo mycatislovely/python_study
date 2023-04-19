@@ -29,6 +29,9 @@
 в течении времени и 
 просматривать получившуюся **историю** с возможностью полной или частичной отмены изменений. 
 
+Основные команды по Git 
+смотри [здесь](https://git-scm.com/book/ru/v2/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)
+
 
 ## Работа с локальным репозиторием 
 
@@ -147,6 +150,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
     о самом репозитории. Данная область представлена скрытым каталогом с именем `.git`.
  
  
+<!--i ["ветка, Git", "branch, Git"]--> 
 ## Ветки 
 
 *Коммит* является записью историй изменения и содержит:
@@ -158,28 +162,117 @@ no changes added to commit (use "git add" and/or "git commit -a")
 - ссылку на один или несколько родительских коммитов.
 
 Ссылки на родительские коммиты формируют цепочку коммитов. Последний коммит в цепочке формирует 
-**ветку**, которая является всего лишь меткой (или указателем) на коммит. При создании нового коммита 
+**ветку (branch)**, которая является всего лишь меткой (или указателем) на коммит. При создании нового коммита 
 ветка автоматически перемещается на этот коммит.
 
-Чтобы посмотреть в какой ветке ты находишься, надо выполнить команду `git branch`.
+Чтобы посмотреть в какой ветке ты находишься, надо выполнить команду `git branch`:
 
 ````shell
 >git branch
+  favicon
+  file_structure
 * main
 ````
 
-Где `* main`
+Здесь видно, что в репозитории есть три ветки. Звездочкой помечена текущая ветка --- `main`.
+Текущую ветку можно посмотреть командой:
 
+````shell
+>git branch --show-current
+main
+```` 
 
+## Работа с удаленным репозиторием 
 
+<!--i ["удаленный репозиторий, Git", "remote repository, Git"]-->
+Системы контроля версий предназначены для командной работы над проектами, т.е. для ситуаций, когда
+несколько разработчиков совместно работают над одной кодовой базой. Git является **распределенной** 
+системой контроля версий, т.е. в ней концептуально отсутствует центральный репозиторий. Все 
+разработчики получают полную копию репозитория, модифицируют ее и в последствии синхронизируют с
+другими копиями. Некоторая копия может быть выбрана в качестве центральной что существенно повышает 
+удобство использования. Примером центрального репозитория может быть репозиторий, открытый на 
+хостинге GitHub. Получение кодовой базы из удаленного репозитория называется **клонированием**:
 
+````shell
+$ git clone https://github.com/alovemycat/python_study.git
+Cloning into 'python_study'...
+...
+Resolving deltas: 100% (390/390), done.
+````
 
+<!--i ["git-bash"]-->
+Здесь мы используем эмулятор командной строки Linux git-bash, который идет в комплекте с Git для
+Windows. 
 
+В результате репозиторий с хостинга GitHub копируется в каталог `python_study` на локальном 
+компьютере:
 
+````shell
+$ ls
+python_study/  test/
+````
 
+Про команду Linux `ls` см. [здесь](<!--page command_line_work-->#ls_linux_command).
 
+Внесем изменения (подробности были рассмотрены выше):
 
+````shell
+$ cd python_study
 
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+$ echo Hello! > some_file.txt
+
+$ ls
+LICENSE    code/  doc_src/          generate_doc_force.bat  pictures.drawio  some_file.txt
+README.md  doc/   generate_doc.bat  md2html_args.json       pictures.svg
+
+$ cat some_file.txt
+Hello!
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        some_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add .
+
+$ git  commit -m "test commit"
+[main 25c6093] test commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 some_file.txt
+
+$ git push
+Enumerating objects: 4, done.
+...
+````
+
+<!--i ["push, Git"]-->
+Команда `push` отправляет в удаленный репозиторий те изменения локального репозитория, которые
+еще не были отправлены.
+
+<!--i ["pull, Git"]-->
+Добавленный файл `some_file.txt` отправлен в центральный репозиторий. Чтобы получить эти изменения
+другому разработчику, у которого репозиторий был склонирован ранее, выполняется команда `pull`:
+
+````shell
+>git pull
+remote: Enumerating objects: 4, done.
+...
+Fast-forward
+ some_file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 some_file.txt
+````
 
 
 
