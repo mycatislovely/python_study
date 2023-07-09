@@ -41,7 +41,7 @@ var dicts = [
 {word: "enable ", translation: "активировать"},
 {word: "disable", translation: "дезактивировать"},
 {word: "query", translation: "запрос", transcription: "'kwı(ə)rı"},
-{word: "encrypt", translation: "зашифровывать"},
+{word: "encrypt", translation: "зашифровывать", transcription: "ın'krıpt"},
 {word: "folder", translation: "папка"},
 {word: "password", translation: "пароль"},
 {word: "replace", translation: "заменить"},
@@ -49,9 +49,9 @@ var dicts = [
 {word: "symbol", translation: "символ"},
 {word: "iteration", translation: "итерация"},
 {word: "tuple", translation: "кортеж"},
-{word: "range", translation: "последовательность"},
+{word: "", translation: "", transcription: ""},
 {word: "counting", translation: "подсчет"},
-{word: "sequences", translation: "последовательности  "},
+{word: "sequence", translation: "последовательность" , transcription: "'si:kwəns"},
 {word: "mutation", translation: "мутация"},
 {word: "functions", translation: "функции"},
 {word: "indent", translation: "отступ"},
@@ -59,16 +59,26 @@ var dicts = [
 {word: "expect", translation: "ожидать"},
 {word: "character", translation: "символ"},
 {word: "exception", translation: "исключение (ошибки)"},
-
 {word: "odd", translation: "нечетное", transcription: "ɒd"},
 {word: "even", translation: "четное", transcription: "'i:v(ə)n"},
 {word: "EOFError", translation: "End of fail, конец файла.", transcription: ""},
 {word: "default value", translation: "значение по умолчанию", transcription: "dı'fɔ:lt"},
-{word: "", translation: "", transcription: ""},
-{word: "", translation: "", transcription: ""},
-{word: "", translation: "", transcription: ""},
-{word: "", translation: "", transcription: ""},
-{word: "", translation: "", transcription: ""},
+{word: "list", translation: "список", transcription: ""},
+{word: "execute", translation: "выполнить", transcription: "'eksıkju:t"},
+{word: "run", translation: "запустить (программу), работать, исполняться (о программе)", transcription: "rʌn"},
+{word: "debug", translation: "отлаживать (программу), отладка (программы)", transcription: "di:'bʌg"},
+{word: "mode", translation: 
+    "режим (например, режим отладки, при котором программа выводит диагностическую информацию)",
+    transcription: "məʋd"},
+{word: "request", translation: "запрос (например, HTTP)", transcription: "rı'kwest"}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
+{word: "", translation: "", transcription: ""}
 {word: "", translation: "", transcription: ""}
 ];
 </script>

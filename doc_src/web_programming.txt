@@ -1,0 +1,49 @@
+<!--VARIABLES {"title": "Веб-программирование", "SORT_ORDER": "21", 
+"code": "web_programming"}-->
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+<!--i ["веб-программирование", "web programming"]-->
+# Веб-программирование
+
+Фреймворк Flask ([Википедия](https://ru.wikipedia.org/wiki/Flask_(%D0%B2%D0%B5%D0%B1-%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA)), [официальный сайт](https://flask.palletsprojects.com))
+позволяет достаточно быстро создать простое web приложение. 
+
+Исходный код приложения находится в файле `python\code\web\flask_app.py`. Порядок запуска:
+
+````wrapped-shell
+>cd python\code\web
+
+>python flask_app.py
+ * Serving Flask app 'flask_app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000 
+Press CTRL+C to quit
+````
+
+При запуске сервер выводит в консоль адрес по которому доступно web приложение: 
+<http://127.0.0.1:5000>.
+
+В качестве эксперимента были разработаны:
+
+- простая страница приветствия;
+- страница профиля пользователя;
+- страница добавления пользователя.
+
+В качестве хранилища данных был использован словарь.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
