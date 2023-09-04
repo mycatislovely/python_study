@@ -40,7 +40,6 @@
             ]               
         },
         "variables": {"logo": "<b><span style=\"color:#59f;margin-right:7px;\">Py</span></b>" },
-        "page-variables": {},
         "index": {"i": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
                     "index-cache-relative": true, "letters": true, "letters-block": true,
                     "add-link-css": ["doc/layout/index.css"]},
@@ -56,6 +55,8 @@
         "wrap-code": {
             "wrap_code": {"style": "code", "input-root": "code/", "output-root": "doc/content/code/",
                           "template": "doc_src/templates/code.html", "variables": {"noPageTitle": true}}
-        }
+        },
+        "include-file": [{ "markers": ["include"], "root-dir": "code/" }],
+        "page-variables": {}
     }
 }

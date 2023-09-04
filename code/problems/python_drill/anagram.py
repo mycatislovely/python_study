@@ -21,5 +21,4 @@ if __name__ == "__main__":
     unittest.main()
 
 
-# print(sorted(input().lower()) == sorted(input().lower()))
 

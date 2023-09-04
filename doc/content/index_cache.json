@@ -335,33 +335,43 @@
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
+      "entry": "DRY, \u043f\u0440\u0438\u043d\u0446\u0438\u043f",
+      "link": "program_design.html#index_entry_i_2",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "don't repeat yourself, \u043f\u0440\u0438\u043d\u0446\u0438\u043f",
+      "link": "program_design.html#index_entry_i_2",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
       "entry": "\u043e\u0431\u044a\u0435\u043a\u0442\u043d\u043e-\u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
-      "link": "program_design.html#index_entry_i_2",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u041e\u041e\u041f",
-      "link": "program_design.html#index_entry_i_2",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "object oriented programming",
-      "link": "program_design.html#index_entry_i_2",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u041e\u041e\u0420",
-      "link": "program_design.html#index_entry_i_2",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441, OO\u041f",
       "link": "program_design.html#index_entry_i_3",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
-      "entry": "subscriptable",
+      "entry": "\u041e\u041e\u041f",
+      "link": "program_design.html#index_entry_i_3",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "object oriented programming",
+      "link": "program_design.html#index_entry_i_3",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "\u041e\u041e\u0420",
+      "link": "program_design.html#index_entry_i_3",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441, OO\u041f",
       "link": "program_design.html#index_entry_i_4",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "subscriptable",
+      "link": "program_design.html#index_entry_i_5",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     }
   ],
