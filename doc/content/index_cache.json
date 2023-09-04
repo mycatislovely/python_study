@@ -335,125 +335,125 @@
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
-      "entry": "DRY, \u043f\u0440\u0438\u043d\u0446\u0438\u043f",
+      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441",
       "link": "program_design.html#index_entry_i_2",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "UI",
+      "link": "program_design.html#index_entry_i_2",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "CLI",
+      "link": "program_design.html#index_entry_i_2",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "DRY, \u043f\u0440\u0438\u043d\u0446\u0438\u043f",
+      "link": "program_design.html#index_entry_i_3",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
       "entry": "don't repeat yourself, \u043f\u0440\u0438\u043d\u0446\u0438\u043f",
-      "link": "program_design.html#index_entry_i_2",
+      "link": "program_design.html#index_entry_i_3",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
       "entry": "\u043e\u0431\u044a\u0435\u043a\u0442\u043d\u043e-\u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
-      "link": "program_design.html#index_entry_i_3",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u041e\u041e\u041f",
-      "link": "program_design.html#index_entry_i_3",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "object oriented programming",
-      "link": "program_design.html#index_entry_i_3",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u041e\u041e\u0420",
-      "link": "program_design.html#index_entry_i_3",
-      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
-    },
-    {
-      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441, OO\u041f",
       "link": "program_design.html#index_entry_i_4",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     },
     {
-      "entry": "subscriptable",
+      "entry": "\u041e\u041e\u041f",
+      "link": "program_design.html#index_entry_i_4",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "object oriented programming",
+      "link": "program_design.html#index_entry_i_4",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "\u041e\u041e\u0420",
+      "link": "program_design.html#index_entry_i_4",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441, OO\u041f",
       "link": "program_design.html#index_entry_i_5",
+      "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
+    },
+    {
+      "entry": "subscriptable",
+      "link": "program_design.html#index_entry_i_6",
       "title": "\u041f\u0440\u043e\u0435\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c"
     }
   ],
   "doc/content/command_line_work.html": [
     {
-      "entry": "\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441",
-      "link": "command_line_work.html#index_entry_i_1",
-      "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
-    },
-    {
-      "entry": "UI",
-      "link": "command_line_work.html#index_entry_i_1",
-      "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
-    },
-    {
-      "entry": "CLI",
-      "link": "command_line_work.html#index_entry_i_1",
-      "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
-    },
-    {
       "entry": "\u043a\u043e\u043d\u0441\u043e\u043b\u044c",
-      "link": "command_line_work.html#index_entry_i_2",
+      "link": "command_line_work.html#index_entry_i_1",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u043a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u043a\u0430",
-      "link": "command_line_work.html#index_entry_i_2",
+      "link": "command_line_work.html#index_entry_i_1",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b",
-      "link": "command_line_work.html#index_entry_i_2",
+      "link": "command_line_work.html#index_entry_i_1",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u043a\u043e\u0440\u043d\u0435\u0432\u043e\u0439 \u043a\u0430\u0442\u0430\u043b\u043e\u0433",
-      "link": "command_line_work.html#index_entry_i_3",
+      "link": "command_line_work.html#index_entry_i_2",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u043a\u0430\u0442\u0430\u043b\u043e\u0433",
-      "link": "command_line_work.html#index_entry_i_4",
+      "link": "command_line_work.html#index_entry_i_3",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "dir",
-      "link": "command_line_work.html#index_entry_i_5",
+      "link": "command_line_work.html#index_entry_i_4",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f",
-      "link": "command_line_work.html#index_entry_i_6",
+      "link": "command_line_work.html#index_entry_i_5",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "environment variables",
-      "link": "command_line_work.html#index_entry_i_6",
+      "link": "command_line_work.html#index_entry_i_5",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "PATH, \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f",
-      "link": "command_line_work.html#index_entry_i_7",
+      "link": "command_line_work.html#index_entry_i_6",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "\u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0432\u043e\u0434\u0430/\u0432\u044b\u0432\u043e\u0434\u0430",
-      "link": "command_line_work.html#index_entry_i_8",
+      "link": "command_line_work.html#index_entry_i_7",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "type, \u043a\u043e\u043c\u0430\u043d\u0434\u0430",
-      "link": "command_line_work.html#index_entry_i_9",
+      "link": "command_line_work.html#index_entry_i_8",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "ls, \u043a\u043e\u043c\u0430\u043d\u0434\u0430 Linux",
-      "link": "command_line_work.html#index_entry_i_10",
+      "link": "command_line_work.html#index_entry_i_9",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     },
     {
       "entry": "echo",
-      "link": "command_line_work.html#index_entry_i_11",
+      "link": "command_line_work.html#index_entry_i_10",
       "title": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0435"
     }
   ],
