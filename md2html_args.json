@@ -9,7 +9,9 @@
         "no-css": true,
         "verbose": true
     },    
-    "documents": [      
+    "documents": [
+        { "input-root": "", "output-root": "", "input": "readme.txt", "title": "Введение", 
+            "page-flows": ["sections", "nav"] },    
         { "input-glob": "*.txt", "page-flows": ["sections", "nav"], 
             "title-from-variable": "title", "code-from-variable": "code", 
             "sort-by-variable": "SORT_ORDER" },

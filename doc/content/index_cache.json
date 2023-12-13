@@ -1,8 +1,8 @@
 {
-  "doc/content/about.html": [
+  "readme.html": [
     {
       "entry": "\u0430\u0440\u0442\u0435\u0444\u0430\u043a\u0442\u044b",
-      "link": "about.html#index_entry_i_1",
+      "link": "../../readme.html#index_entry_i_1",
       "title": "\u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435"
     }
   ],
