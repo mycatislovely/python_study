@@ -1,0 +1,8 @@
+body {
+    background-image: url("pict/background.png");
+}
+
+div.noBullets + ul {
+    list-style-type: none;
+}
+

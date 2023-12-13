@@ -4,11 +4,11 @@
     },
     "default": {
         "input-root": "doc_src",
-        "output-root": "doc/content", 
+        "output-root": "doc/content",
         "template": "doc_src/templates/multipage.html",
         "no-css": true,
         "verbose": true
-    },
+    },    
     "documents": [      
         { "input-glob": "*.txt", "page-flows": ["sections", "nav"], 
             "title-from-variable": "title", "code-from-variable": "code", 
@@ -18,6 +18,14 @@
             "sort-by-file-path": true }
     ],
     "plugins": {
+        "variables": {
+            "html_lang": "en",
+            "burger_open_image": "layout/pict/burger.png",
+            "show_source_link": true,
+            "theme": "light",
+            "add_more_prog_langs": true
+        },
+        "page-variables": {},
         "relative-paths": {
             "markers": ["path"],
             "paths": {
@@ -29,17 +37,26 @@
         },
         "page-flows": {
             "header": [
-               { "link": "doc/content/index_page.html", "title": "Index" },
-               { "link": "doc/content/todo_page.html", "title": "TODO" },
-               { "link": "doc/content/problems_page.html", "title": "Задачи" },
-               { "link": "https://github.com/mycatislovely/python_study", "title": "GitHub", "external": true }
+                { "link": "readme.html", "title": "", "image": "favicon.png", "image_class": "logo_image",
+                    "image_alt": "Logo" },
+                { "link": "readme.html", "title": "Home", "class": "toggle_wide_only_inline" },
+                { "link": "doc/content/index_page.html", "title": "Index", "class": "toggle_wide_only_inline" },                 
+                { "link": "doc/content/todo_page.html", "title": "TODO" },
+                { "link": "doc/content/problems_page.html", "title": "Задачи" },       
+                { "link": "doc/content/index_page.html", "title": "", "class": "toggle_narrow_only_inline",
+                    "image": "layout/pict/search.png", "image_class": "header_image index_image",
+                    "image_alt": "Index" }
             ],
-            "useful_links": [
+            "header_wide_only": [
+                { "link": "https://github.com/mycatislovely/python_study", "title": "GitHub", "external": true }
+            ],
+            "sections": { "groups": ["sidebar"] },
+            "useful_links": { "title": "Useful links", "groups": ["sidebar"], "items": [
                { "link": "https://www.python.org/", "title": "Python", "external": true },
                { "link": "https://git-scm.com/", "title": "Git", "external": true }    
-            ]               
+            ]}
         },
-        "variables": {"logo": "<b><span style=\"color:#59f;margin-right:7px;\">Py</span></b>" },
+        "ignore": { "markers": ["ignore"] },
         "index": {"i": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
                     "index-cache-relative": true, "letters": true, "letters-block": true,
                     "add-link-css": ["doc/layout/index.css"]},
@@ -50,13 +67,13 @@
                     "index-cache-relative": true, "letters": true, "letters-block": true,
                     "add-link-css": ["doc/layout/index.css"]}
         },
-        "ignore": { },
         "page-links": { "markers": ["page"] },
         "wrap-code": {
             "wrap_code": {"style": "code", "input-root": "code/", "output-root": "doc/content/code/",
                           "template": "doc_src/templates/code.html", "variables": {"noPageTitle": true}}
         },
-        "include-file": [{ "markers": ["include"], "root-dir": "code/" }],
-        "page-variables": {}
+        "include-file": [{ "markers": ["include"], "root-dir": "code/" }]
     }
 }
+
+
