@@ -1,4 +1,57 @@
-from random import randint 
+<!DOCTYPE html>
+<html>
+<head><title>hangman.py</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="../../../favicon.png"/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../../layout/content.css">
+<link rel="stylesheet" type="text/css" href="../../../layout/more_prog_langs.css">
+<link rel="stylesheet" type="text/css" href="../../../themes/light/content_theme.css">
+<link rel="stylesheet" type="text/css" href="../../../themes/light/more_prog_langs_theme.css">
+<link rel="stylesheet" type="text/css" href="../../../layout/layout.css">
+<link rel="stylesheet" type="text/css" href="../../../themes/light/layout_theme.css">
+<link rel="stylesheet" type="text/css" href="../../../custom.css">
+
+<link rel="stylesheet" type="text/css" href="../../../layout/flex.css">
+<style>
+body {margin-right: 0; margin-left: 0; padding: 30px; width: unset; max-width: unset;}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+<a 
+class="header_item "
+href="../../../../readme.html"><img 
+class="logo_image" src="../../../favicon.png" /></a><a 
+class="header_item toggle_wide_only_inline"
+href="../../../../readme.html"><span class="">Home</span></a><a 
+class="header_item toggle_wide_only_inline"
+href="../../index_page.html"><span class="">Index</span></a><a 
+class="header_item "
+href="../../todo_page.html"><span class="">TODO</span></a><a 
+class="header_item "
+href="../../problems_page.html"><span class="">Задачи</span></a><a 
+class="header_item toggle_narrow_only_inline"
+href="../../index_page.html"><img 
+class="header_image index_image" src="../../../layout/pict/search.png" /></a><a 
+class="header_item toggle_wide_only_inline"
+href="https://github.com/mycatislovely/python_study"><span class="">GitHub</span></a>
+
+<span class="source_file inactive toggle_wide_only_inline">&lt;/&gt;</span>
+
+<img class="headerNavArrows" src="../../../layout/pict/previous_page_h21px_inactive.png"/>
+
+<img class="headerNavArrows" src="../../../layout/pict/next_page_h21px_inactive.png"/>
+
+<span class="headerTitle">hangman.py</span>
+
+</div>
+
+<p><strong>Path:</strong> mini_projects/hangman.py</p>
+
+<pre class="highlight"><code class="language-code">from random import randint 
 
 word_list = ['ЖЕНЩИНА', 'МУЖЧИНА', 'ЧЕЛОВЕК', 'РЫБА', 'ПТИЦА', 'СОБАКА', 'ВОШЬ', 'ДЕРЕВО', 
              'СЕМЯ', 'ЛИСТ', 'КОРЕНЬ', 'КОРА', 'КОЖА', 'МЯСО', 'КРОВЬ', 'КОСТЬ', 'ЖИР', 'ЯЙЦО', 
@@ -6,7 +59,7 @@ word_list = ['ЖЕНЩИНА', 'МУЖЧИНА', 'ЧЕЛОВЕК', 'РЫБА', '
              'ЯЗЫК', 'НОГОТЬ', 'НОГА', 'КОЛЕНО', 'РУКА', 'ЖИВОТ', 'ГОРЛО', 'ГРУДЬ', 'СЕРДЦЕ', 
              'ПЕЧЕНЬ', 'СОЛНЦЕ', 'ЛУНА', 'ЗВЕЗДА', 'ВОДА', 'ДОЖДЬ', 'КАМЕНЬ', 'ПЕСОК', 'ЗЕМЛЯ', 
              'ОБЛАКО', 'ДЫМ', 'ОГОНЬ', 'ПЕПЕЛ', 'ДОРОГА', 'ТРОПА', 'ГОРА', 'НОЧЬ', 'ИМЯ']
-             
+
 alf = set('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')
 
 stages = [  # финальное состояние: голова, торс, обе руки, обе ноги
@@ -80,7 +133,7 @@ stages = [  # финальное состояние: голова, торс, о�
                   ---
                 '''
     ]
-    
+
 victory =  '''
                    --------
                    |      |
@@ -90,7 +143,7 @@ victory =  '''
         / \\        |    
                   ---
                 '''
-    
+
 def input_letter(used_letters):
     while True:
         letter = input('Назовите букву: ').strip().upper()
@@ -102,8 +155,8 @@ def input_letter(used_letters):
             print('Такая буква уже была!')
         else:
             return letter
-    
-            
+
+
 word = word_list[randint(0, len(word_list) - 1)]
 guessed_word = '*' * len(word)
 print('И так, начинаем игру "Поле чудес"!')
@@ -113,7 +166,7 @@ used_letters = set()
 while guessed_word != word:
     print(stages[tries])
     print('У вас осталось попыток:', tries)
-    if tries < 1:
+    if tries &lt; 1:
         print('Увы, вы проиграли :(')
         print('Это было слово:', word)
         break
@@ -129,8 +182,15 @@ while guessed_word != word:
         print('Нет такой буквы в этом слове :(')
     else:
         print('Есть такая буква в этом слове!')
-        
+
 else:
     print('Вы угадали:', guessed_word)            
     print(victory)
- 
+
+</code></pre>
+
+<p><span class="poweredBy">Powered by <a class="poweredByLink" 
+href="https://github.com/arctrong/md2html">md2html_py</a> 1.0.7</span></p>
+
+</body>
+</html>
